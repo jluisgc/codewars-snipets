@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class GravityFlipTest {
 
-    public int[] flip(char dir, int[] arr) {
+    public static int[] flip(char dir, int[] arr) {
         Arrays.sort(arr);
         if (dir == 'L') {
             return Arrays.stream(arr).boxed().sorted(Collections.reverseOrder()).mapToInt(Integer::intValue).toArray();
